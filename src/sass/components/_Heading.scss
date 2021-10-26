@@ -1,0 +1,45 @@
+.heading {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 3px 0 #dee2e6;
+  padding: 10px;
+  border-radius: 5px;
+  &_item {
+    width: 170px;
+    height: 140px;
+    border: 1px solid #eee;
+    margin-left: -32%;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    @include mobile {
+      margin-left: -18%;
+      width: 115px;
+    }
+    &:hover {
+      box-shadow: 0px 0px 4px 4px #eee;
+    }
+    &_img {
+      position: absolute;
+      left: 30%;
+      top: 20%;
+      @include tablet {
+        left: 23%;
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $color-item;
+      }
+    }
+    &_title a {
+      display: block;
+      text-align: center;
+      margin-top: 62%;
+      @include mobile {
+        margin-top: 90%;
+      }
+    }
+  }
+}

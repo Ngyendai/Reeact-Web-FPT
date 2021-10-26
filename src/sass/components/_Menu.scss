@@ -1,0 +1,247 @@
+.nav {
+  width: 100%;
+  background-color: $bg-menu;
+  height: 35px;
+  @include tablet {
+    height: 60px;
+  }
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    top: 20%;
+    left: -110%;
+    z-index: 9999999999999999;
+    padding: 1.6rem 0;
+  }
+}
+.nav_list.active {
+  left: 0;
+  background-color: #fff;
+}
+.hamburger {
+  display: none;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+  }
+}
+.nav_list li {
+  position: relative;
+}
+
+.nav_list li a {
+  color: #fff;
+  line-height: 35px;
+  display: block;
+  @include tablet {
+    color: #333;
+  }
+}
+
+.nav_list li a:hover {
+  color: $color-item;
+}
+
+.nav_icons {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav_dropdown_menu {
+  position: absolute;
+  top: 101%;
+  left: 0%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.nav_list li:hover .nav_dropdown_menu,
+.nav_list li:hover .nav_mega_menu {
+  visibility: visible;
+  opacity: 1;
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav_dropdown_menu ul {
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 8px 20px #eee;
+}
+
+.nav_dropdown_menu li {
+  width: 200px;
+  padding: 5px 10px;
+}
+
+.nav_dropdown_menu li a {
+  color: #000;
+  display: block;
+}
+
+.nav_mega_menu {
+  width: 1100px;
+  padding: 5px 15px;
+  background: white;
+  position: absolute;
+
+  top: 100%;
+  left: 10%;
+  z-index: 999;
+  box-shadow: 2px 8px 20px #eee;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.mega_menu {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mega_menu li {
+  margin: 0 1%;
+  width: 90px;
+}
+
+.nav_mega_menu .mega_menu_row {
+  width: 1100px;
+  display: flex;
+
+  align-items: center;
+  padding: 0px;
+}
+
+.nav_mega_menu .mega_menu_row .mega_menu_column {
+  width: 200px;
+  line-height: 25px;
+  height: 320px;
+  border-right: 1px solid $bg-button;
+}
+.nav_mega_menu .mega_menu_row .mega_menu_column ul li {
+  width: 100px;
+}
+.nav_mega_menu .mega_menu_row .mega_menu_column:nth-child(4) {
+  border: none;
+}
+
+.mega_menu_row .mega_menu_column header {
+  color: #333;
+  font-weight: 700;
+}
+
+.mega_menu_row .mega_menu_column .mega_menu_column-img {
+  width: 160px;
+}
+
+.mega_menu_row .mega_menu_column .mega_menu_column-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav_mega_menu .mega_menu_row .mega_menu_column:nth-child(1),
+.nav_mega_menu .mega_menu_row .mega_menu_column:nth-child(3) {
+  width: 400px;
+  max-width: 550px;
+
+  border-right: 1px solid $bg-button;
+  margin: 0 1%;
+}
+
+.mega_menu_column_product-img {
+  width: 70px;
+  height: 40px;
+}
+.mega_menu_column-img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 300px;
+}
+.mega_menu_column_product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mega_menu_column-product-infomation {
+  margin-left: 10px;
+}
+
+.mega_menu_column-product-infomation p a {
+  color: $color-txt-search;
+  line-height: 25px;
+}
+
+.mega_menu_column-product-infomation span {
+  color: $bg-header;
+  font-weight: 700;
+}
+
+.mega_menu_column ul li a {
+  color: #000;
+}
+
+.mega_menu_column-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#marigin-left {
+  left: -180%;
+}
+
+#marigin-left1 {
+  left: -380%;
+}
+
+#marigin-left2 {
+  left: -580%;
+}
+#margin-left3 {
+  left: -1010%;
+}
+#border__none {
+  border-right: none;
+}
+#width__mega__menu1 {
+  width: 550px;
+}
+#width__mega__menu1 ul li {
+  width: 120px;
+}
+
+#width__mega__menu2 {
+  width: 300px;
+}
+#width__mega__menu3 {
+  width: 430px;
+}

@@ -1,0 +1,17 @@
+.section {
+    margin: 5% 0;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px #dee2e6;
+    /*section__title*/
+    &__title {
+        font-size: 2rem;
+        text-transform: capitalize;
+        text-align: left;
+    }
+    &__title .color_red {
+        color: $bg-header;
+        margin-bottom: 2%;
+    }
+}

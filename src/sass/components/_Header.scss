@@ -1,0 +1,94 @@
+.header {
+  height: 55px;
+  background-color: $bg-header;
+  &_logo img {
+    width: 200px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 2%;
+    @include tablet {
+      margin-left: 27%;
+    }
+  }
+  &_search input {
+    width: 450px;
+    padding: 10px;
+    margin-left: -30%;
+    margin-top: 2.5%;
+    border: none;
+    outline: none;
+    position: relative;
+    @include tablet {
+      width: 350px;
+      margin-left: 0;
+      margin-top: 9px;
+      padding: 10px;
+    }
+  }
+  &_icons_search {
+    width: 50px;
+    height: 35px;
+    background-color: $bg-search;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px;
+    position: absolute;
+    top: 2%;
+    @include tablet {
+      top: 69px;
+    }
+  }
+  &_text {
+    margin-top: 2%;
+    color: #fff;
+  }
+  &_text-left,
+  &_header_text-right {
+    width: 100px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &_text-center {
+    width: 120px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &_icons {
+    font-size: 20px;
+    margin-left: 25%;
+    &_left {
+      margin-left: 28%;
+    }
+    &_size {
+      font-size: 20px;
+    }
+  }
+}
+
+#header_icons_left {
+  margin-left: 17%;
+}
+
+.header_text-right {
+  position: relative;
+  margin-right: 15px;
+  @include tablet {
+    display: block;
+    top: 2%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.header_text-right span {
+  background: blue;
+  border-radius: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  padding: 5px;
+}
