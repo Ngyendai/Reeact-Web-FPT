@@ -1,6 +1,6 @@
 {
   "name": "react-web-fpt",
-  "homepage": "http://Nguyendai.github.io/fptshop",
+  "homepage": "https://Nguyendai.github.io/react-web-fpt",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "pg-pages -d bulid"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
